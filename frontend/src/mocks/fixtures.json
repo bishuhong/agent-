@@ -1,0 +1,3823 @@
+{
+  "project": {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "created_at": "2026-10-23T12:21:27.331318Z",
+    "updated_at": "2026-10-23T12:21:27.331318Z",
+    "revision": 1,
+    "name": "数据集成工作空间",
+    "code": "preview",
+    "description": "ETL-Agent 交互预览项目",
+    "available_actions": [
+      {
+        "action": "answer_clarification",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "approve_data",
+        "allowed": false,
+        "reason_code": "FORBIDDEN",
+        "reason_message": "预览身份没有此职责"
+      },
+      {
+        "action": "approve_security",
+        "allowed": false,
+        "reason_code": "FORBIDDEN",
+        "reason_message": "预览身份没有此职责"
+      },
+      {
+        "action": "authorize_evolution",
+        "allowed": false,
+        "reason_code": "FORBIDDEN",
+        "reason_message": "预览身份没有此职责"
+      },
+      {
+        "action": "cancel",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "cleanup",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "commit",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "create_connection",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "create_pipeline",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "edit_connection",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "freeze_version",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "generate",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "manage_project_members",
+        "allowed": false,
+        "reason_code": "FORBIDDEN",
+        "reason_message": "预览身份没有此职责"
+      },
+      {
+        "action": "manage_schedule",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "pause",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "prepare",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "profile_connection",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "rerun",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "resume",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "revoke_evolution",
+        "allowed": false,
+        "reason_code": "FORBIDDEN",
+        "reason_message": "预览身份没有此职责"
+      },
+      {
+        "action": "rollback",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "rotate_secret",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "run_benchmark",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "test_connection",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "upload_file",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      },
+      {
+        "action": "view",
+        "allowed": true,
+        "reason_code": null,
+        "reason_message": null
+      }
+    ]
+  },
+  "memberships": [
+    {
+      "id": "00000000-0000-4000-8000-000000000005",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "user_id": "00000000-0000-4000-8000-000000000002",
+      "role": "maker"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000006",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "user_id": "00000000-0000-4000-8000-000000000002",
+      "role": "operator"
+    }
+  ],
+  "identity": {
+    "user": {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "username": "preview_user",
+      "display_name": "预览用户",
+      "email": null,
+      "status": "enabled"
+    },
+    "project_memberships": [
+      {
+        "id": "00000000-0000-4000-8000-000000000005",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "updated_at": "2026-10-23T12:21:27.331318Z",
+        "revision": 1,
+        "user_id": "00000000-0000-4000-8000-000000000002",
+        "role": "maker"
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000006",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "updated_at": "2026-10-23T12:21:27.331318Z",
+        "revision": 1,
+        "user_id": "00000000-0000-4000-8000-000000000002",
+        "role": "operator"
+      }
+    ],
+    "role_grants": [],
+    "available_actions": [],
+    "expires_at": "2026-10-23T20:21:27.331318Z",
+    "csrf_token": "explicit-preview-no-real-session"
+  },
+  "connections": [
+    {
+      "name": "订单业务库",
+      "connector_type": "postgresql",
+      "endpoint": {
+        "kind": "database",
+        "host": "preview.example.test",
+        "port": 5432,
+        "database": "preview",
+        "schema": null
+      },
+      "environment": "test",
+      "id": "00000000-0000-4000-8000-00000000000a",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "secret_ref_id": null,
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    {
+      "name": "用户中心",
+      "connector_type": "mysql",
+      "endpoint": {
+        "kind": "database",
+        "host": "preview.example.test",
+        "port": 5432,
+        "database": "preview",
+        "schema": null
+      },
+      "environment": "test",
+      "id": "00000000-0000-4000-8000-00000000000b",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "secret_ref_id": null,
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    {
+      "name": "分析数据仓库",
+      "connector_type": "doris",
+      "endpoint": {
+        "kind": "database",
+        "host": "preview.example.test",
+        "port": 5432,
+        "database": "preview",
+        "schema": null
+      },
+      "environment": "test",
+      "id": "00000000-0000-4000-8000-00000000000c",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "secret_ref_id": null,
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    {
+      "name": "客户服务库",
+      "connector_type": "postgresql",
+      "endpoint": {
+        "kind": "database",
+        "host": "preview.example.test",
+        "port": 5432,
+        "database": "preview",
+        "schema": null
+      },
+      "environment": "test",
+      "id": "00000000-0000-4000-8000-00000000000d",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "secret_ref_id": null,
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    {
+      "name": "产品行为库",
+      "connector_type": "clickhouse",
+      "endpoint": {
+        "kind": "database",
+        "host": "preview.example.test",
+        "port": 5432,
+        "database": "preview",
+        "schema": null
+      },
+      "environment": "test",
+      "id": "00000000-0000-4000-8000-00000000000e",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "secret_ref_id": null,
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    {
+      "name": "业务归档库",
+      "connector_type": "mysql",
+      "endpoint": {
+        "kind": "database",
+        "host": "preview.example.test",
+        "port": 5432,
+        "database": "preview",
+        "schema": null
+      },
+      "environment": "test",
+      "id": "00000000-0000-4000-8000-00000000000f",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "secret_ref_id": null,
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "00000000-0000-4000-8000-000000000014",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "schema_version": 1,
+      "connection_id": "00000000-0000-4000-8000-00000000000a",
+      "file_asset_id": null,
+      "resource_name": "orders",
+      "fields": [
+        {
+          "field_name": "order_id",
+          "ordinal": 0,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": true,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        },
+        {
+          "field_name": "customer_id",
+          "ordinal": 1,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": false,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        },
+        {
+          "field_name": "amount",
+          "ordinal": 2,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": false,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        },
+        {
+          "field_name": "created_at",
+          "ordinal": 3,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": false,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        }
+      ],
+      "statistics": {
+        "row_count": "28640",
+        "is_approximate": true
+      },
+      "masked_samples": [],
+      "profile_digest": "1111111111111111111111111111111111111111111111111111111111111111",
+      "expires_at": "2026-10-23T12:36:27.331318Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000015",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "schema_version": 1,
+      "connection_id": "00000000-0000-4000-8000-00000000000c",
+      "file_asset_id": null,
+      "resource_name": "orders_analytics",
+      "fields": [
+        {
+          "field_name": "order_id",
+          "ordinal": 0,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": true,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        },
+        {
+          "field_name": "customer_id",
+          "ordinal": 1,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": false,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        },
+        {
+          "field_name": "amount",
+          "ordinal": 2,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": false,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        },
+        {
+          "field_name": "created_at",
+          "ordinal": 3,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": false,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        }
+      ],
+      "statistics": {
+        "row_count": "28640",
+        "is_approximate": true
+      },
+      "masked_samples": [],
+      "profile_digest": "2222222222222222222222222222222222222222222222222222222222222222",
+      "expires_at": "2026-10-23T12:36:27.331318Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000016",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "schema_version": 1,
+      "connection_id": "00000000-0000-4000-8000-00000000000d",
+      "file_asset_id": null,
+      "resource_name": "customers",
+      "fields": [
+        {
+          "field_name": "order_id",
+          "ordinal": 0,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": true,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        },
+        {
+          "field_name": "customer_id",
+          "ordinal": 1,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": false,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        },
+        {
+          "field_name": "amount",
+          "ordinal": 2,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": false,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        },
+        {
+          "field_name": "created_at",
+          "ordinal": 3,
+          "native_type": null,
+          "logical_type": "string",
+          "nullable": false,
+          "is_primary_key": false,
+          "precision": null,
+          "scale": null,
+          "sensitivity": "public"
+        }
+      ],
+      "statistics": {
+        "row_count": "28640",
+        "is_approximate": true
+      },
+      "masked_samples": [],
+      "profile_digest": "3333333333333333333333333333333333333333333333333333333333333333",
+      "expires_at": "2026-10-23T12:36:27.331318Z"
+    }
+  ],
+  "pipelines": [
+    {
+      "id": "00000000-0000-4000-8000-00000000001e",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "name": "订单明细增量同步",
+      "code": "orders_incremental",
+      "description": null,
+      "status": "ready",
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000001f",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "name": "用户画像数据归集",
+      "code": "customer_profiles",
+      "description": null,
+      "status": "draft",
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000020",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "name": "产品行为宽表构建",
+      "code": "product_events",
+      "description": null,
+      "status": "ready",
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000021",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "updated_at": "2026-10-23T12:21:27.331318Z",
+      "revision": 1,
+      "name": "销售日报数据准备",
+      "code": "sales_daily",
+      "description": null,
+      "status": "draft",
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    }
+  ],
+  "versions": [
+    {
+      "id": "00000000-0000-4000-8000-000000000028",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "pipeline_id": "00000000-0000-4000-8000-00000000001e",
+      "version_number": 1,
+      "is_immutable": true,
+      "artifact_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "revision": 1
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000029",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "pipeline_id": "00000000-0000-4000-8000-00000000001f",
+      "version_number": 1,
+      "is_immutable": false,
+      "artifact_digest": null,
+      "revision": 1
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000002a",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "pipeline_id": "00000000-0000-4000-8000-000000000020",
+      "version_number": 1,
+      "is_immutable": true,
+      "artifact_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "revision": 1
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000002b",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "pipeline_id": "00000000-0000-4000-8000-000000000021",
+      "version_number": 1,
+      "is_immutable": false,
+      "artifact_digest": null,
+      "revision": 1
+    }
+  ],
+  "designs": {
+    "00000000-0000-4000-8000-000000000028": {
+      "version": {
+        "id": "00000000-0000-4000-8000-000000000028",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "pipeline_id": "00000000-0000-4000-8000-00000000001e",
+        "version_number": 1,
+        "is_immutable": true,
+        "artifact_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "revision": 1
+      },
+      "etl_plan": {
+        "schema_version": 1,
+        "source_profile_ids": [
+          "00000000-0000-4000-8000-000000000014"
+        ],
+        "target_profile_id": "00000000-0000-4000-8000-000000000015",
+        "field_mappings": [
+          {
+            "source_fields": [
+              "order_id"
+            ],
+            "target_field": "order_id",
+            "expression": "identity(order_id)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "customer_id"
+            ],
+            "target_field": "customer_id",
+            "expression": "identity(customer_id)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "amount"
+            ],
+            "target_field": "amount",
+            "expression": "identity(amount)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "created_at"
+            ],
+            "target_field": "created_at",
+            "expression": "identity(created_at)",
+            "target_type": "string"
+          }
+        ],
+        "nodes": [
+          {
+            "node_id": "orders_source",
+            "kind": "source",
+            "resource_ref": "orders"
+          },
+          {
+            "node_id": "field_mapping",
+            "kind": "transform",
+            "resource_ref": null
+          },
+          {
+            "node_id": "analytics_sink",
+            "kind": "sink",
+            "resource_ref": "orders_analytics"
+          }
+        ],
+        "edges": [
+          {
+            "from_node_id": "orders_source",
+            "to_node_id": "field_mapping"
+          },
+          {
+            "from_node_id": "field_mapping",
+            "to_node_id": "analytics_sink"
+          }
+        ],
+        "quality_contract": {
+          "schema_version": 1,
+          "rules": [
+            {
+              "rule_id": "not_null_order",
+              "field_name": "order_id",
+              "kind": "not_null",
+              "stage": "validate",
+              "error_code": "ORDER_ID_EMPTY"
+            }
+          ],
+          "error_resource": {
+            "connection_id": "00000000-0000-4000-8000-00000000000c",
+            "file_asset_id": null,
+            "resource_name": "orders_errors",
+            "operations": [
+              "execute_etl"
+            ],
+            "environment": "test"
+          },
+          "max_rejection_ratio": "0.01",
+          "allow_empty_input": false
+        },
+        "supervision_contract": {
+          "schema_version": 1,
+          "max_input_records": "1000000",
+          "max_output_bytes": "1073741824",
+          "max_duration_ms": "3600000",
+          "max_amplification_ratio": "10",
+          "max_rejection_ratio": "0.05",
+          "on_exceed": "kill"
+        }
+      },
+      "hocon_text": "env { parallelism = 1 }\nsource { Managed { resource_ref = \"orders\" } }\ntransform { FieldMapper { order_id = \"order_id\" } }\nsink { Managed { resource_ref = \"orders_analytics\" } }",
+      "validation_report": {
+        "id": "00000000-0000-4000-8000-000000000032",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "version_id": "00000000-0000-4000-8000-000000000028",
+        "content_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "rule_version": "preview-v1",
+        "passed": true,
+        "issues": []
+      },
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": false,
+          "reason_code": "STATE_CONFLICT",
+          "reason_message": "已冻结版本只读"
+        },
+        {
+          "action": "generate",
+          "allowed": false,
+          "reason_code": "STATE_CONFLICT",
+          "reason_message": "已冻结版本只读"
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    "00000000-0000-4000-8000-000000000029": {
+      "version": {
+        "id": "00000000-0000-4000-8000-000000000029",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "pipeline_id": "00000000-0000-4000-8000-00000000001f",
+        "version_number": 1,
+        "is_immutable": false,
+        "artifact_digest": null,
+        "revision": 1
+      },
+      "etl_plan": {
+        "schema_version": 1,
+        "source_profile_ids": [
+          "00000000-0000-4000-8000-000000000014"
+        ],
+        "target_profile_id": "00000000-0000-4000-8000-000000000015",
+        "field_mappings": [
+          {
+            "source_fields": [
+              "order_id"
+            ],
+            "target_field": "order_id",
+            "expression": "identity(order_id)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "customer_id"
+            ],
+            "target_field": "customer_id",
+            "expression": "identity(customer_id)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "amount"
+            ],
+            "target_field": "amount",
+            "expression": "identity(amount)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "created_at"
+            ],
+            "target_field": "created_at",
+            "expression": "identity(created_at)",
+            "target_type": "string"
+          }
+        ],
+        "nodes": [
+          {
+            "node_id": "orders_source",
+            "kind": "source",
+            "resource_ref": "orders"
+          },
+          {
+            "node_id": "field_mapping",
+            "kind": "transform",
+            "resource_ref": null
+          },
+          {
+            "node_id": "analytics_sink",
+            "kind": "sink",
+            "resource_ref": "orders_analytics"
+          }
+        ],
+        "edges": [
+          {
+            "from_node_id": "orders_source",
+            "to_node_id": "field_mapping"
+          },
+          {
+            "from_node_id": "field_mapping",
+            "to_node_id": "analytics_sink"
+          }
+        ],
+        "quality_contract": {
+          "schema_version": 1,
+          "rules": [
+            {
+              "rule_id": "not_null_order",
+              "field_name": "order_id",
+              "kind": "not_null",
+              "stage": "validate",
+              "error_code": "ORDER_ID_EMPTY"
+            }
+          ],
+          "error_resource": {
+            "connection_id": "00000000-0000-4000-8000-00000000000c",
+            "file_asset_id": null,
+            "resource_name": "orders_errors",
+            "operations": [
+              "execute_etl"
+            ],
+            "environment": "test"
+          },
+          "max_rejection_ratio": "0.01",
+          "allow_empty_input": false
+        },
+        "supervision_contract": {
+          "schema_version": 1,
+          "max_input_records": "1000000",
+          "max_output_bytes": "1073741824",
+          "max_duration_ms": "3600000",
+          "max_amplification_ratio": "10",
+          "max_rejection_ratio": "0.05",
+          "on_exceed": "kill"
+        }
+      },
+      "hocon_text": "env { parallelism = 1 }\nsource { Managed { resource_ref = \"orders\" } }\ntransform { FieldMapper { order_id = \"order_id\" } }\nsink { Managed { resource_ref = \"orders_analytics\" } }",
+      "validation_report": {
+        "id": "00000000-0000-4000-8000-000000000033",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "version_id": "00000000-0000-4000-8000-000000000029",
+        "content_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "rule_version": "preview-v1",
+        "passed": true,
+        "issues": []
+      },
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    "00000000-0000-4000-8000-00000000002a": {
+      "version": {
+        "id": "00000000-0000-4000-8000-00000000002a",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "pipeline_id": "00000000-0000-4000-8000-000000000020",
+        "version_number": 1,
+        "is_immutable": true,
+        "artifact_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "revision": 1
+      },
+      "etl_plan": {
+        "schema_version": 1,
+        "source_profile_ids": [
+          "00000000-0000-4000-8000-000000000014"
+        ],
+        "target_profile_id": "00000000-0000-4000-8000-000000000015",
+        "field_mappings": [
+          {
+            "source_fields": [
+              "order_id"
+            ],
+            "target_field": "order_id",
+            "expression": "identity(order_id)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "customer_id"
+            ],
+            "target_field": "customer_id",
+            "expression": "identity(customer_id)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "amount"
+            ],
+            "target_field": "amount",
+            "expression": "identity(amount)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "created_at"
+            ],
+            "target_field": "created_at",
+            "expression": "identity(created_at)",
+            "target_type": "string"
+          }
+        ],
+        "nodes": [
+          {
+            "node_id": "orders_source",
+            "kind": "source",
+            "resource_ref": "orders"
+          },
+          {
+            "node_id": "field_mapping",
+            "kind": "transform",
+            "resource_ref": null
+          },
+          {
+            "node_id": "analytics_sink",
+            "kind": "sink",
+            "resource_ref": "orders_analytics"
+          }
+        ],
+        "edges": [
+          {
+            "from_node_id": "orders_source",
+            "to_node_id": "field_mapping"
+          },
+          {
+            "from_node_id": "field_mapping",
+            "to_node_id": "analytics_sink"
+          }
+        ],
+        "quality_contract": {
+          "schema_version": 1,
+          "rules": [
+            {
+              "rule_id": "not_null_order",
+              "field_name": "order_id",
+              "kind": "not_null",
+              "stage": "validate",
+              "error_code": "ORDER_ID_EMPTY"
+            }
+          ],
+          "error_resource": {
+            "connection_id": "00000000-0000-4000-8000-00000000000c",
+            "file_asset_id": null,
+            "resource_name": "orders_errors",
+            "operations": [
+              "execute_etl"
+            ],
+            "environment": "test"
+          },
+          "max_rejection_ratio": "0.01",
+          "allow_empty_input": false
+        },
+        "supervision_contract": {
+          "schema_version": 1,
+          "max_input_records": "1000000",
+          "max_output_bytes": "1073741824",
+          "max_duration_ms": "3600000",
+          "max_amplification_ratio": "10",
+          "max_rejection_ratio": "0.05",
+          "on_exceed": "kill"
+        }
+      },
+      "hocon_text": "env { parallelism = 1 }\nsource { Managed { resource_ref = \"orders\" } }\ntransform { FieldMapper { order_id = \"order_id\" } }\nsink { Managed { resource_ref = \"orders_analytics\" } }",
+      "validation_report": {
+        "id": "00000000-0000-4000-8000-000000000034",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "version_id": "00000000-0000-4000-8000-00000000002a",
+        "content_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "rule_version": "preview-v1",
+        "passed": true,
+        "issues": []
+      },
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": false,
+          "reason_code": "STATE_CONFLICT",
+          "reason_message": "已冻结版本只读"
+        },
+        {
+          "action": "generate",
+          "allowed": false,
+          "reason_code": "STATE_CONFLICT",
+          "reason_message": "已冻结版本只读"
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    },
+    "00000000-0000-4000-8000-00000000002b": {
+      "version": {
+        "id": "00000000-0000-4000-8000-00000000002b",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "pipeline_id": "00000000-0000-4000-8000-000000000021",
+        "version_number": 1,
+        "is_immutable": false,
+        "artifact_digest": null,
+        "revision": 1
+      },
+      "etl_plan": {
+        "schema_version": 1,
+        "source_profile_ids": [
+          "00000000-0000-4000-8000-000000000014"
+        ],
+        "target_profile_id": "00000000-0000-4000-8000-000000000015",
+        "field_mappings": [
+          {
+            "source_fields": [
+              "order_id"
+            ],
+            "target_field": "order_id",
+            "expression": "identity(order_id)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "customer_id"
+            ],
+            "target_field": "customer_id",
+            "expression": "identity(customer_id)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "amount"
+            ],
+            "target_field": "amount",
+            "expression": "identity(amount)",
+            "target_type": "string"
+          },
+          {
+            "source_fields": [
+              "created_at"
+            ],
+            "target_field": "created_at",
+            "expression": "identity(created_at)",
+            "target_type": "string"
+          }
+        ],
+        "nodes": [
+          {
+            "node_id": "orders_source",
+            "kind": "source",
+            "resource_ref": "orders"
+          },
+          {
+            "node_id": "field_mapping",
+            "kind": "transform",
+            "resource_ref": null
+          },
+          {
+            "node_id": "analytics_sink",
+            "kind": "sink",
+            "resource_ref": "orders_analytics"
+          }
+        ],
+        "edges": [
+          {
+            "from_node_id": "orders_source",
+            "to_node_id": "field_mapping"
+          },
+          {
+            "from_node_id": "field_mapping",
+            "to_node_id": "analytics_sink"
+          }
+        ],
+        "quality_contract": {
+          "schema_version": 1,
+          "rules": [
+            {
+              "rule_id": "not_null_order",
+              "field_name": "order_id",
+              "kind": "not_null",
+              "stage": "validate",
+              "error_code": "ORDER_ID_EMPTY"
+            }
+          ],
+          "error_resource": {
+            "connection_id": "00000000-0000-4000-8000-00000000000c",
+            "file_asset_id": null,
+            "resource_name": "orders_errors",
+            "operations": [
+              "execute_etl"
+            ],
+            "environment": "test"
+          },
+          "max_rejection_ratio": "0.01",
+          "allow_empty_input": false
+        },
+        "supervision_contract": {
+          "schema_version": 1,
+          "max_input_records": "1000000",
+          "max_output_bytes": "1073741824",
+          "max_duration_ms": "3600000",
+          "max_amplification_ratio": "10",
+          "max_rejection_ratio": "0.05",
+          "on_exceed": "kill"
+        }
+      },
+      "hocon_text": "env { parallelism = 1 }\nsource { Managed { resource_ref = \"orders\" } }\ntransform { FieldMapper { order_id = \"order_id\" } }\nsink { Managed { resource_ref = \"orders_analytics\" } }",
+      "validation_report": {
+        "id": "00000000-0000-4000-8000-000000000035",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "version_id": "00000000-0000-4000-8000-00000000002b",
+        "content_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "rule_version": "preview-v1",
+        "passed": true,
+        "issues": []
+      },
+      "available_actions": [
+        {
+          "action": "answer_clarification",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "approve_data",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "approve_security",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "authorize_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "cancel",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "cleanup",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "commit",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "create_pipeline",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "edit_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "freeze_version",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "generate",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "manage_project_members",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "manage_schedule",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "pause",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "prepare",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "profile_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rerun",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "resume",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "revoke_evolution",
+          "allowed": false,
+          "reason_code": "FORBIDDEN",
+          "reason_message": "预览身份没有此职责"
+        },
+        {
+          "action": "rollback",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "rotate_secret",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "run_benchmark",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "test_connection",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "upload_file",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        },
+        {
+          "action": "view",
+          "allowed": true,
+          "reason_code": null,
+          "reason_message": null
+        }
+      ]
+    }
+  },
+  "preparation": {
+    "preparation": {
+      "id": "00000000-0000-4000-8000-00000000003c",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "schema_version": 1,
+      "version_id": "00000000-0000-4000-8000-000000000028",
+      "purpose": "execute_etl",
+      "execution_run_id": null,
+      "maker_id": "00000000-0000-4000-8000-000000000003",
+      "input_fingerprint": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "input_bindings": [],
+      "resource_scopes": [
+        {
+          "connection_id": "00000000-0000-4000-8000-00000000000c",
+          "file_asset_id": null,
+          "resource_name": "orders_errors",
+          "operations": [
+            "execute_etl"
+          ],
+          "environment": "test"
+        }
+      ],
+      "impact_summary": "读取冻结源，仅写批准的影子与错误资源；发布需独立授权。",
+      "data_classification": "public",
+      "environment": "test",
+      "risk_level": "P3",
+      "required_slots": [
+        "data",
+        "security"
+      ],
+      "quality_contract": {
+        "schema_version": 1,
+        "rules": [
+          {
+            "rule_id": "not_null_order",
+            "field_name": "order_id",
+            "kind": "not_null",
+            "stage": "validate",
+            "error_code": "ORDER_ID_EMPTY"
+          }
+        ],
+        "error_resource": {
+          "connection_id": "00000000-0000-4000-8000-00000000000c",
+          "file_asset_id": null,
+          "resource_name": "orders_errors",
+          "operations": [
+            "execute_etl"
+          ],
+          "environment": "test"
+        },
+        "max_rejection_ratio": "0.01",
+        "allow_empty_input": false
+      },
+      "supervision_contract": {
+        "schema_version": 1,
+        "max_input_records": "1000000",
+        "max_output_bytes": "1073741824",
+        "max_duration_ms": "3600000",
+        "max_amplification_ratio": "10",
+        "max_rejection_ratio": "0.05",
+        "on_exceed": "kill"
+      },
+      "rollback_plan": {
+        "schema_version": 1,
+        "target": {
+          "connection_id": "00000000-0000-4000-8000-00000000000c",
+          "file_asset_id": null,
+          "resource_name": "orders_errors",
+          "operations": [
+            "execute_etl"
+          ],
+          "environment": "test"
+        },
+        "shadow_resource": "orders_analytics__preview_shadow",
+        "retained_resource": "orders_analytics__preview_retained",
+        "retention_ms": "86400000",
+        "expected_generation": "0",
+        "steps": [
+          "核验目标代次",
+          "按冻结范围恢复资源"
+        ]
+      },
+      "policy_version": "1",
+      "expires_at": "2026-10-23T12:51:27.331318Z",
+      "evaluation_binding": null
+    },
+    "approvals": [
+      {
+        "id": "00000000-0000-4000-8000-00000000003d",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "updated_at": "2026-10-23T12:21:27.331318Z",
+        "revision": 1,
+        "preparation_id": "00000000-0000-4000-8000-00000000003c",
+        "version_id": "00000000-0000-4000-8000-000000000028",
+        "required_slot": "data",
+        "status": "pending",
+        "decision": null,
+        "approver_id": null,
+        "decided_at": null
+      },
+      {
+        "id": "00000000-0000-4000-8000-00000000003e",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "updated_at": "2026-10-23T12:21:27.331318Z",
+        "revision": 1,
+        "preparation_id": "00000000-0000-4000-8000-00000000003c",
+        "version_id": "00000000-0000-4000-8000-000000000028",
+        "required_slot": "security",
+        "status": "pending",
+        "decision": null,
+        "approver_id": null,
+        "decided_at": null
+      }
+    ],
+    "validity": "valid",
+    "available_actions": [
+      {
+        "action": "approve_data",
+        "allowed": false,
+        "reason_code": "STATE_CONFLICT",
+        "reason_message": "预览准备单尚未取得双槽审批"
+      },
+      {
+        "action": "approve_security",
+        "allowed": false,
+        "reason_code": "STATE_CONFLICT",
+        "reason_message": "预览准备单尚未取得双槽审批"
+      },
+      {
+        "action": "commit",
+        "allowed": false,
+        "reason_code": "STATE_CONFLICT",
+        "reason_message": "预览准备单尚未取得双槽审批"
+      }
+    ]
+  },
+  "preparationSummaries": [
+    {
+      "id": "00000000-0000-4000-8000-00000000003c",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "version_id": "00000000-0000-4000-8000-000000000028",
+      "maker_id": "00000000-0000-4000-8000-000000000003",
+      "expires_at": "2026-10-23T12:51:27.331318Z",
+      "validity": "valid",
+      "approval_status": "pending_approval"
+    }
+  ],
+  "runs": {
+    "00000000-0000-4000-8000-000000000046": {
+      "run": {
+        "id": "00000000-0000-4000-8000-000000000046",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "updated_at": "2026-10-23T12:21:27.331318Z",
+        "revision": 1,
+        "version_id": "00000000-0000-4000-8000-000000000028",
+        "preparation_id": "00000000-0000-4000-8000-00000000003c",
+        "capability_token_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "execution_status": "succeeded",
+        "engine_job_id": "preview-job-0",
+        "input_records": "28640",
+        "output_records": "28612",
+        "error_records": "28",
+        "bytes_processed": "104857600",
+        "started_at": "2026-10-23T12:01:27.331318Z",
+        "finished_at": "2026-10-23T12:21:27.331318Z",
+        "original_run_id": null,
+        "metrics": {
+          "input_records": "28640",
+          "output_records": "28612",
+          "error_records": "28",
+          "bytes_processed": "104857600",
+          "filtered_records": null,
+          "output_bytes": "104857600",
+          "duration_ms": "46000",
+          "throughput_records_per_second": null,
+          "amplification_ratio": null,
+          "rejection_ratio": null,
+          "observed_at": "2026-10-23T12:21:27.331318Z"
+        }
+      },
+      "publication": null,
+      "latest_rollback": null,
+      "quality_report": null,
+      "supervision": null,
+      "available_actions": [
+        {
+          "action": "cancel",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "pause",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "rerun",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "resume",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "rollback",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        }
+      ]
+    },
+    "00000000-0000-4000-8000-000000000047": {
+      "run": {
+        "id": "00000000-0000-4000-8000-000000000047",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "updated_at": "2026-10-23T12:21:27.331318Z",
+        "revision": 1,
+        "version_id": "00000000-0000-4000-8000-000000000028",
+        "preparation_id": "00000000-0000-4000-8000-00000000003c",
+        "capability_token_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "execution_status": "running",
+        "engine_job_id": "preview-job-1",
+        "input_records": "28640",
+        "output_records": "28612",
+        "error_records": "28",
+        "bytes_processed": "104857600",
+        "started_at": "2026-10-23T12:01:27.331318Z",
+        "finished_at": null,
+        "original_run_id": null,
+        "metrics": {
+          "input_records": "28640",
+          "output_records": "28612",
+          "error_records": "28",
+          "bytes_processed": "104857600",
+          "filtered_records": null,
+          "output_bytes": "104857600",
+          "duration_ms": "46000",
+          "throughput_records_per_second": null,
+          "amplification_ratio": null,
+          "rejection_ratio": null,
+          "observed_at": "2026-10-23T12:21:27.331318Z"
+        }
+      },
+      "publication": null,
+      "latest_rollback": null,
+      "quality_report": null,
+      "supervision": null,
+      "available_actions": [
+        {
+          "action": "cancel",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "pause",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "rerun",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "resume",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "rollback",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        }
+      ]
+    },
+    "00000000-0000-4000-8000-000000000048": {
+      "run": {
+        "id": "00000000-0000-4000-8000-000000000048",
+        "project_id": "00000000-0000-4000-8000-000000000001",
+        "created_at": "2026-10-23T12:21:27.331318Z",
+        "updated_at": "2026-10-23T12:21:27.331318Z",
+        "revision": 1,
+        "version_id": "00000000-0000-4000-8000-000000000028",
+        "preparation_id": "00000000-0000-4000-8000-00000000003c",
+        "capability_token_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "execution_status": "failed",
+        "engine_job_id": "preview-job-2",
+        "input_records": "28640",
+        "output_records": "28612",
+        "error_records": "28",
+        "bytes_processed": "104857600",
+        "started_at": "2026-10-23T12:01:27.331318Z",
+        "finished_at": "2026-10-23T12:21:27.331318Z",
+        "original_run_id": null,
+        "metrics": {
+          "input_records": "28640",
+          "output_records": "28612",
+          "error_records": "28",
+          "bytes_processed": "104857600",
+          "filtered_records": null,
+          "output_bytes": "104857600",
+          "duration_ms": "46000",
+          "throughput_records_per_second": null,
+          "amplification_ratio": null,
+          "rejection_ratio": null,
+          "observed_at": "2026-10-23T12:21:27.331318Z"
+        }
+      },
+      "publication": null,
+      "latest_rollback": null,
+      "quality_report": null,
+      "supervision": null,
+      "available_actions": [
+        {
+          "action": "cancel",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "pause",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "rerun",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "resume",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        },
+        {
+          "action": "rollback",
+          "allowed": false,
+          "reason_code": "DEPENDENCY_UNAVAILABLE",
+          "reason_message": "交互预览不执行真实运行操作"
+        }
+      ]
+    }
+  },
+  "runSummaries": [
+    {
+      "id": "00000000-0000-4000-8000-000000000046",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "version_id": "00000000-0000-4000-8000-000000000028",
+      "execution_status": "succeeded",
+      "publication_status": "not_published",
+      "rollback_status": null,
+      "started_at": "2026-10-23T12:01:27.331318Z",
+      "finished_at": "2026-10-23T12:21:27.331318Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000047",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "version_id": "00000000-0000-4000-8000-000000000028",
+      "execution_status": "running",
+      "publication_status": "not_published",
+      "rollback_status": null,
+      "started_at": "2026-10-23T12:01:27.331318Z",
+      "finished_at": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000048",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "version_id": "00000000-0000-4000-8000-000000000028",
+      "execution_status": "failed",
+      "publication_status": "not_published",
+      "rollback_status": null,
+      "started_at": "2026-10-23T12:01:27.331318Z",
+      "finished_at": "2026-10-23T12:21:27.331318Z"
+    }
+  ],
+  "overview": {
+    "project_id": "00000000-0000-4000-8000-000000000001",
+    "connection_count": "6",
+    "pipeline_count": "4",
+    "pending_approval_count": "2",
+    "period_start": "2026-10-16T12:21:27.331318Z",
+    "period_end": "2026-10-23T12:21:27.331318Z",
+    "run_success_rate": "0.5",
+    "resource_distribution": [
+      {
+        "connector_type": "postgresql",
+        "resource_count": "2"
+      },
+      {
+        "connector_type": "mysql",
+        "resource_count": "2"
+      },
+      {
+        "connector_type": "doris",
+        "resource_count": "1"
+      },
+      {
+        "connector_type": "clickhouse",
+        "resource_count": "1"
+      }
+    ]
+  },
+  "audit": [
+    {
+      "id": "00000000-0000-4000-8000-000000000050",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "actor_id": "00000000-0000-4000-8000-000000000002",
+      "actor_kind": "user",
+      "event_type": "pipeline_created",
+      "resource_type": "pipeline_version",
+      "resource_id": "00000000-0000-4000-8000-000000000028",
+      "payload_digest": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "prev_event_hash": null,
+      "event_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "sequence_no": "1"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000051",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "actor_id": "00000000-0000-4000-8000-000000000002",
+      "actor_kind": "user",
+      "event_type": "version_frozen",
+      "resource_type": "pipeline_version",
+      "resource_id": "00000000-0000-4000-8000-000000000028",
+      "payload_digest": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "prev_event_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "event_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "sequence_no": "2"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000052",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "actor_id": "00000000-0000-4000-8000-000000000002",
+      "actor_kind": "user",
+      "event_type": "prepared",
+      "resource_type": "pipeline_version",
+      "resource_id": "00000000-0000-4000-8000-000000000028",
+      "payload_digest": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "prev_event_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "event_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "sequence_no": "3"
+    }
+  ],
+  "health": {
+    "status": "degraded",
+    "checked_at": "2026-10-23T12:21:27.331318Z",
+    "components": []
+  },
+  "datasets": [
+    {
+      "id": "00000000-0000-4000-8000-00000000005a",
+      "project_id": "00000000-0000-4000-8000-000000000001",
+      "created_at": "2026-10-23T12:21:27.331318Z",
+      "schema_version": 1,
+      "name": "基础集成门禁样例",
+      "version": "v1",
+      "content_digest": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    }
+  ],
+  "agent": {
+    "id": "00000000-0000-4000-8000-00000000005f",
+    "project_id": "00000000-0000-4000-8000-000000000001",
+    "created_at": "2026-10-23T12:21:27.331318Z",
+    "updated_at": "2026-10-23T12:21:27.331318Z",
+    "revision": 1,
+    "version_id": "00000000-0000-4000-8000-000000000028",
+    "conversation_id": "00000000-0000-4000-8000-000000000060",
+    "thread_id": "preview-agent",
+    "prompt": "预览设计需求",
+    "provider_binding": {
+      "provider": "deepseek",
+      "model": "deepseek-v4.1-flash",
+      "prompt_version": "v1",
+      "policy_version": "1"
+    },
+    "status": "succeeded",
+    "step_count": 3,
+    "repair_count": 0,
+    "error_message": null
+  }
+}

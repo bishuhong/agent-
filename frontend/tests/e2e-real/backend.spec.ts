@@ -1,0 +1,21 @@
+import { test,expect } from '@playwright/test'
+test('真实后端：会话登录、刷新恢复、创建与查询、CSV解析、退出撤销',async({page})=>{
+ const stamp=Date.now(),pipelineName=`真实浏览器创建-${stamp}`,fileName=`browser-data-${stamp}.csv`
+ const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message))
+ await page.goto('/login');await page.getByLabel('账号',{exact:true}).fill('frontend_test');await page.getByLabel('密码',{exact:true}).fill('Browser-test-password-123!');await page.getByRole('button',{name:'进入工作空间'}).click()
+ await expect(page.getByRole('heading',{name:'总览工作台',exact:true})).toBeVisible()
+ await expect(page.getByText('交互预览 · 全部为模拟数据，不连接真实后端，也不会执行真实任务')).not.toBeVisible()
+ await page.reload();await expect(page.getByRole('heading',{name:'总览工作台',exact:true})).toBeVisible()
+ await page.getByRole('link',{name:'流水线',exact:true}).click();await page.getByRole('button',{name:'新建流水线',exact:true}).click()
+ await page.getByLabel('流水线名称',{exact:true}).fill(pipelineName);await page.getByLabel('项目内唯一标识',{exact:true}).fill('real_browser_'+stamp);await page.getByRole('button',{name:'创建并进入 Studio'}).click()
+ await expect(page.getByRole('heading',{name:'Pipeline Studio',exact:true})).toBeVisible()
+ await page.reload();await expect(page.getByRole('heading',{name:'Pipeline Studio',exact:true})).toBeVisible()
+ await page.getByRole('link',{name:'流水线',exact:true}).click();await expect(page.getByRole('button',{name:pipelineName,exact:true})).toBeVisible()
+ await page.getByRole('link',{name:'数据连接与资产',exact:true}).click();await page.getByRole('tab',{name:'文件资产',exact:true}).click()
+ await page.getByLabel('选择数据文件',{exact:true}).setInputFiles({name:fileName,mimeType:'text/csv',buffer:Buffer.from('order_id,amount\n1001,23.50\n1002,41.00\n')})
+ await page.getByRole('button',{name:'上传并解析',exact:true}).click();await expect(page.getByRole('button',{name:fileName,exact:true})).toBeVisible()
+ await page.getByRole('tab',{name:'元数据 Profile',exact:true}).click();await expect(page.getByText(fileName,{exact:true})).toBeVisible()
+ await page.screenshot({path:'../docs/frontend-real-integration.png',fullPage:true})
+ await page.getByRole('button',{name:'退出当前会话',exact:true}).click();await expect(page.getByRole('heading',{name:'欢迎回来',exact:true})).toBeVisible()
+ expect(errors).toEqual([])
+})
